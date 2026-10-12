@@ -33,10 +33,12 @@
   var run = function () {
     if (pending) return;
     pending = true;
-    requestAnimationFrame(function () {
+    // setTimeout, а не requestAnimationFrame: rAF не срабатывает в фоновой вкладке,
+    // и страница, открытая не на переднем плане, оставалась бы пустой.
+    setTimeout(function () {
       pending = false;
       fns.forEach(function (fn) { try { fn(); } catch (e) { console.error(e); } });
-    });
+    }, 0);
   };
 
   window.dash = {
