@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Предпроект по саду: пример результата</title>
+<meta name="description" content="Как выглядит результат предпроекта по саду: карта решений по кварталам, паспорт квартала, карта потерь и бюджетная рамка. Данные условные.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:title" content="Предпроект по саду: пример результата">
+<meta property="og:description" content="Как выглядит результат предпроекта по саду: карта решений по кварталам, паспорт квартала, карта потерь и бюджетная рамка. Данные условные.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='3' width='12' height='12' rx='3' fill='%232a78d6'/%3E%3Crect x='17' y='3' width='12' height='12' rx='3' fill='%23d95926'/%3E%3Crect x='3' y='17' width='12' height='12' rx='3' fill='%23c3c2b7'/%3E%3Crect x='17' y='17' width='12' height='12' rx='3' fill='%232a78d6'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<main class="site" id="dash-root">
+<div class="as-page" id="as">
+  <header class="as-head" id="top">
+    <h1 class="as-title">Предпроект по саду: пример результата</h1>
+    <p class="as-notice"><strong>Это пример.</strong><span>Сад, кварталы и цифры условные: они смоделированы, чтобы показать формат результата и логику решений. Настоящие цифры появятся после анализа данных хозяйства.</span></p>
+    <p class="as-lead" id="lead">Уровень Core (25+ т/га) уже сейчас держат <b class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Core" data-fmt="d1">—</b> га, это <b class="dash-skeleton" data-source="summary" data-field="quarters" data-where="category=Core" data-fmt="d0">—</b> <span data-plural="summary|category=Core|quarters">кварталов</span>. Еще <b class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Усиление" data-fmt="d1">—</b> га могут дотянуть до Core с полной программой, но <b class="dash-skeleton" data-source="summary" data-field="gray_ha" data-where="category=Усиление" data-fmt="d1">—</b> га из них нужно проверить в цветение и завязь 2027. На санитарный минимум уходят <b class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Санитарный минимум" data-fmt="d1">—</b> га, кандидаты на вывод - <b class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Кандидат на вывод" data-fmt="d1">—</b> га.</p>
+  </header>
+
+  <section class="as-kpis" id="kpis" aria-label="Площадь по решениям">
+    <div class="as-card as-tile">
+      <div class="as-lab"><span class="as-sw" style="background:var(--cds-chart-categorical-1)"></span>Core: 25+ т/га уже сейчас</div>
+      <div class="as-big"><span class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Core" data-fmt="d1">—</span><span class="as-unit">га</span></div>
+      <div class="as-sub"><span class="dash-skeleton" data-source="summary" data-field="quarters" data-where="category=Core" data-fmt="d0">—</span> <span data-plural="summary|category=Core|quarters">кварталов</span> · в среднем <span class="dash-skeleton" data-source="summary" data-field="level_avg" data-where="category=Core" data-fmt="d1">—</span> т/га</div>
+    </div>
+    <div class="as-card as-tile">
+      <div class="as-lab"><span class="as-sw" style="background:var(--cds-chart-categorical-2)"></span>Усиление: дотянуть до Core</div>
+      <div class="as-big"><span class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Усиление" data-fmt="d1">—</span><span class="as-unit">га</span></div>
+      <div class="as-sub"><span class="dash-skeleton" data-source="summary" data-field="quarters" data-where="category=Усиление" data-fmt="d0">—</span> <span data-plural="summary|category=Усиление|quarters">кварталов</span> · сейчас <span class="dash-skeleton" data-source="summary" data-field="level_avg" data-where="category=Усиление" data-fmt="d1">—</span> т/га</div>
+    </div>
+    <div class="as-card as-tile">
+      <div class="as-lab"><span class="as-sw" style="background:var(--cds-chart-muted)"></span>Санитарный минимум</div>
+      <div class="as-big"><span class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Санитарный минимум" data-fmt="d1">—</span><span class="as-unit">га</span></div>
+      <div class="as-sub"><span class="dash-skeleton" data-source="summary" data-field="quarters" data-where="category=Санитарный минимум" data-fmt="d0">—</span> <span data-plural="summary|category=Санитарный минимум|quarters">кварталов</span> · <span class="dash-skeleton" data-source="summary" data-field="level_avg" data-where="category=Санитарный минимум" data-fmt="d1">—</span> т/га</div>
+    </div>
+    <div class="as-card as-tile">
+      <div class="as-lab"><span class="as-sw" style="background:var(--color-fg-muted)"></span>Кандидаты на вывод</div>
+      <div class="as-big"><span class="dash-skeleton" data-source="summary" data-field="area_ha" data-where="category=Кандидат на вывод" data-fmt="d1">—</span><span class="as-unit">га</span></div>
+      <div class="as-sub"><span class="dash-skeleton" data-source="summary" data-field="quarters" data-where="category=Кандидат на вывод" data-fmt="d0">—</span> <span data-plural="summary|category=Кандидат на вывод|quarters">кварталов</span> · <span class="dash-skeleton" data-source="summary" data-field="level_avg" data-where="category=Кандидат на вывод" data-fmt="d1">—</span> т/га</div>
+    </div>
+    <div class="as-card as-tile">
+      <div class="as-lab"><span class="as-sw as-hatch"></span>Серая зона: проверить весной</div>
+      <div class="as-big"><span class="dash-skeleton" data-source="summary" data-field="gray_ha" data-where="category=Всего" data-fmt="d1">—</span><span class="as-unit">га</span></div>
+      <div class="as-sub">условный статус до цветения и завязи 2027</div>
+    </div>
+  </section>
+
+  <div class="as-split">
+    <section class="as-card" id="map-card">
+      <div class="as-cardhead">
+        <div>
+          <h2 class="as-h2">Карта решений по кварталам</h2>
+          <p class="as-note">Цвет - решение, штриховка - нужна проверка весной. Нажмите на квартал, чтобы открыть его паспорт.</p>
+        </div>
+        <div class="as-seg" role="group" aria-label="Что показать на карте">
+          <button type="button" data-mode="decision">Решение</button>
+          <button type="button" data-mode="program">Программа <span class="js-scn"></span></button>
+        </div>
+      </div>
+      <div class="as-chart" id="map" data-source="quarters sections" style="min-height:14rem"></div>
+      <div class="as-legend" id="map-legend"></div>
+    </section>
+
+    <section class="as-card" id="passport">
+      <div class="as-pass-head">
+        <span class="as-kicker">Паспорт квартала</span>
+        <h2 class="as-pass-title as-h2">Квартал <span class="dash-skeleton" data-source="quarters" data-field="id" data-pf="txt">—</span> · <span class="dash-skeleton" data-source="quarters" data-field="variety" data-pf="txt">—</span>, <span class="dash-skeleton" data-source="quarters" data-field="year_planted" data-pf="txt">—</span></h2>
+        <div class="as-badges">
+          <span class="as-badge"><span class="as-sw js-pass-sw"></span><span class="dash-skeleton" data-source="quarters" data-field="category" data-pf="txt">—</span></span>
+          <span class="as-badge">Уверенность: <span class="dash-skeleton" data-source="quarters" data-field="confidence" data-pf="txt">—</span></span>
+          <span class="as-badge js-visit" hidden>Осмотрен на выезде</span>
+        </div>
+      </div>
+      <div class="as-nums">
+        <div class="as-num"><span class="v"><span class="dash-skeleton" data-source="quarters" data-field="level_2027" data-pf="d1">—</span></span><span class="k">т/га, уровень 2027 в нормальный год</span><span class="as-sub">интервал 90%: <span data-source="quarters" data-field="ci_low" data-pf="d1">—</span>-<span data-source="quarters" data-field="ci_high" data-pf="d1">—</span></span></div>
+        <div class="as-num"><span class="v"><span class="dash-skeleton" data-source="quarters" data-field="p25" data-pf="pct">—</span></span><span class="k">вероятность держать 25+ т/га</span></div>
+        <div class="as-num"><span class="v"><span class="dash-skeleton" data-source="quarters" data-field="with_program_2027" data-pf="d1">—</span></span><span class="k">т/га с полной программой в 2027</span></div>
+      </div>
+      <dl class="as-facts">
+        <div><dt>Участок</dt><dd data-source="quarters" data-field="section_name" data-pf="txt">—</dd></div>
+        <div><dt>Площадь, га</dt><dd data-source="quarters" data-field="area_ha" data-pf="d1">—</dd></div>
+        <div><dt>Подвой, схема</dt><dd><span data-source="quarters" data-field="rootstock" data-pf="txt">—</span>, <span data-source="quarters" data-field="scheme" data-pf="txt">—</span></dd></div>
+        <div><dt>Деревьев на га: план / факт</dt><dd><span data-source="quarters" data-field="trees_plan_ha" data-pf="d0">—</span> / <span data-source="quarters" data-field="trees_fact_ha" data-pf="d0">—</span></dd></div>
+        <div><dt>Выпад, %</dt><dd data-source="quarters" data-field="vypad_pct" data-pf="d1">—</dd></div>
+        <div><dt>Почва</dt><dd data-source="quarters" data-field="soil" data-pf="txt">—</dd></div>
+        <div><dt>Микрозона</dt><dd data-source="quarters" data-field="zone" data-pf="txt">—</dd></div>
+        <div><dt>Орошение</dt><dd data-source="quarters" data-field="irrigation" data-pf="txt">—</dd></div>
+        <div><dt>Кг с дерева, 2027</dt><dd data-source="quarters" data-field="kg_tree" data-pf="d1">—</dd></div>
+        <div><dt>Товарный выход, %</dt><dd data-source="quarters" data-field="packout_pct" data-pf="d0">—</dd></div>
+      </dl>
+      <h3 class="as-h3">Урожай по годам и уровень 2027, т/га</h3>
+      <div class="as-chart" id="yield-chart" data-source="yields quarters" style="min-height:200px"></div>
+      <h3 class="as-h3">Карта потерь: от ориентира сорта к уровню квартала</h3>
+      <div class="as-chart" id="loss-chart" data-source="losses" style="min-height:120px"></div>
+      <div class="as-actions">
+        <div><span class="k">Главная причина</span><span data-source="quarters" data-field="main_reason" data-pf="txt">—</span></div>
+        <div><span class="k">Что делать этой зимой</span><span data-source="quarters" data-field="winter_action" data-pf="txt">—</span></div>
+        <div><span class="k">Что проверить весной</span><span data-source="quarters" data-field="spring_check" data-pf="txt">—</span></div>
+      </div>
+    </section>
+  </div>
+
+  <section class="as-card" id="budget">
+    <div class="as-cardhead">
+      <div>
+        <h2 class="as-h2">Бюджетная рамка 2027: Core на 300, 400 или 500 га</h2>
+        <p class="as-note">Полная программа идет на кварталы Core, затем на Усиление в порядке надежности, остальные кварталы на санитарном минимуме.</p>
+      </div>
+      <div class="as-controls">
+        <div class="as-seg" role="group" aria-label="Площадь программы">
+          <button type="button" data-scn="300 га">300 га</button><button type="button" data-scn="400 га">400 га</button><button type="button" data-scn="500 га">500 га</button>
+        </div>
+        <div class="as-seg" role="group" aria-label="Норматив программы">
+          <button type="button" data-norm="150 руб/дерево">150 руб/дерево</button><button type="button" data-norm="200 руб/дерево">200 руб/дерево</button>
+        </div>
+      </div>
+    </div>
+    <div class="as-kpis">
+      <div class="as-tile"><span class="as-lab">Площадь программы</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="area_ha|d1">—</span><span class="as-unit">га</span></span><span class="as-sub"><span data-source="scenarios" data-bf="quarters|d0">—</span> кв. · <span data-source="scenarios" data-bf="trees_k|d0">—</span> тыс. деревьев</span></div>
+      <div class="as-tile"><span class="as-lab">Программа, млн руб</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="cost_program_mln|d1">—</span></span><span class="as-sub js-norm-label"></span></div>
+      <div class="as-tile"><span class="as-lab">Санитарный минимум, млн руб</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="cost_sanitary_mln|d1">—</span></span><span class="as-sub">остальная площадь, 15-20 руб/дерево</span></div>
+      <div class="as-tile"><span class="as-lab">Всего на сад, млн руб</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="cost_total_mln|d1">—</span></span><span class="as-sub">без капвложений</span></div>
+      <div class="as-tile"><span class="as-lab">Сбор с программы, т</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="harvest_program_t|d0">—</span></span><span class="as-sub">в среднем <span data-source="scenarios" data-bf="yield_program_t_ha|d1">—</span> т/га в нормальный год</span></div>
+      <div class="as-tile"><span class="as-lab">Затраты программы на 1 кг, руб</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="cost_per_kg_rub|d2">—</span></span><span class="as-sub">растут с каждым следующим гектаром</span></div>
+      <div class="as-tile"><span class="as-lab"><span class="as-sw as-hatch"></span>Серая зона в программе, га</span><span class="as-big"><span class="dash-skeleton" data-source="scenarios" data-bf="gray_ha|d1">—</span></span><span class="as-sub">деньги под условием проверки весной</span></div>
+    </div>
+    <h3 class="as-h3">Сравнение сценариев при выбранном нормативе</h3>
+    <div style="overflow-x:auto">
+      <table class="as-table" id="scn-table" data-source="scenarios" data-row-key="key">
+        <thead><tr>
+          <th data-field="scenario">Сценарий</th><th class="n" data-field="area_ha">Площадь, га</th><th class="n" data-field="quarters">Кварталов</th><th class="n w" data-field="trees_k">Деревьев, тыс.</th><th class="n" data-field="cost_program_mln">Программа, млн</th><th class="n w" data-field="cost_sanitary_mln">Сан. минимум, млн</th><th class="n" data-field="cost_total_mln">Всего, млн</th><th class="n w" data-field="harvest_program_t">Сбор, т</th><th class="n" data-field="yield_program_t_ha">т/га</th><th class="n" data-field="cost_per_kg_rub">руб/кг</th><th class="n" data-field="gray_ha">Серая зона, га</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <p class="as-note">Нормативы 150-200 руб/дерево на полную программу и 15-20 руб/дерево на санитарный минимум условные. В настоящем расчете берутся фактическое число деревьев (подсчет дроном) и состав бюджета хозяйства.</p>
+  </section>
+
+  <div class="as-two" id="weather">
+    <section class="as-card">
+      <h2 class="as-h2">Погода года отдельно от квартала</h2>
+      <p class="as-note">Насколько каждый год был лучше или хуже нормального для всех кварталов сразу. Модель вычитает этот эффект, и остается вклад самого квартала.</p>
+      <div class="as-chart" id="years-chart" data-source="years" style="min-height:220px;margin-top:var(--cds-gap-md)"></div>
+    </section>
+    <section class="as-card">
+      <h2 class="as-h2">Почему не берем простое среднее</h2>
+      <p class="as-note">Точки выше диагонали - кварталы, которые среднее за годы недооценивает: молодые сады и пострадавшие от заморозка. Пунктир - цель Core 25 т/га.</p>
+      <div class="as-chart" id="scatter" data-source="quarters" style="min-height:260px;margin-top:var(--cds-gap-md)"></div>
+      <div class="as-legend" id="scatter-legend"></div>
+    </section>
+  </div>
+
+  <section class="as-card" id="matrix">
+    <div class="as-cardhead">
+      <div>
+        <h2 class="as-h2">Матрица решений: все кварталы</h2>
+        <p class="as-note">Сортировка по заголовку столбца, поиск по номеру, сорту или причине. Строка открывает паспорт квартала.</p>
+      </div>
+    </div>
+    <div class="as-tools">
+      <div class="as-seg" role="group" aria-label="Фильтр по решению" id="cat-filter">
+        <button type="button" data-cat="all">Все</button><button type="button" data-cat="Core">Core</button><button type="button" data-cat="Усиление">Усиление</button><button type="button" data-cat="Санитарный минимум">Санитарный</button><button type="button" data-cat="Кандидат на вывод">Вывод</button><button type="button" data-cat="gray">Серая зона</button>
+      </div>
+      <input class="as-search" id="q-search" type="search" placeholder="Поиск: 2-14, Гала, полив" aria-label="Поиск по кварталам">
+      <span class="as-count" id="q-count"></span>
+    </div>
+    <div class="as-tablebox">
+      <table class="as-table" id="q-table" data-source="quarters" data-row-key="id">
+        <thead><tr></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="as-card" id="method">
+    <h2 class="as-h2">Как читать пример</h2>
+    <ul class="as-method">
+      <li><b>Уровень квартала</b> - урожай в нормальный по погоде год при нынешней технологии. Считаем смешанной моделью по всем годам и кварталам: она отделяет квартал от погоды года, сорта и возраста, как племенную ценность отделяют от условий содержания. Интервал показывает точность оценки: чем короче история квартала, тем он шире.</li>
+      <li><b>Вероятность 25+ т/га</b> - насколько уверенно квартал держит цель Core. Порог для Core и уровни уверенности согласуем с ведущим агрономом.</li>
+      <li><b>Ориентир</b> - что дает этот сорт в этом возрасте при хорошей технологии. Разница с уровнем квартала раскладывается на причины в карте потерь, у каждой причины статус: подтверждена данными, реестром, погодой, выездом или пока остается версией.</li>
+      <li><b>Серая зона</b> - кварталы с условным статусом: окончательное решение дадут цветение, завязь и нагрузка в мае-июне 2027. До проверки они получают минимально достаточный бюджет.</li>
+      <li><b>Решения REGRAFT, REPLANT и EXIT с NPV</b> в предпроект не входят: это второй трек. Кандидаты на вывод здесь только отмечены.</li>
+    </ul>
+  </section>
+  <footer class="as-foot">Пример формата результата предпроектной диагностики сада. Сад, кварталы и цифры смоделированы, совпадения с реальными хозяйствами случайны.</footer>
+</div>
+</main>
+<script src="assets/d3.v7.9.0.min.js"></script>
+<script src="js/dash-shim.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
